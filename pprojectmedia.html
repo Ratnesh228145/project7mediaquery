@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mediaqueries</title>
+    <style>
+          .containor{
+            display: flex;
+          }
+        .box{
+            height:350px;
+            width: 350px;
+            border: 2px solid black;
+            margin: 2px;
+          
+        }
+       
+        @media screen and (max-width:768px){
+           .containor{
+           display: flex;
+           flex-direction: column;
+           color: blue;
+           background-color: rgb(66, 104, 176);
+           }
+        }
+        @media screen and (min-width:768px ){
+            .containor{
+                display: flex;
+                flex-direction: column;
+                color: aqua;
+                background-color: rgba(88, 18, 18, 0.43);
+                
+            }
+        }
+        @media screen and (min-width:1024px){
+            .containor{
+                display: flex;
+                flex-direction: column;
+                color: rgb(96, 23, 135);
+                background-color: green;
+            }
+        }
+        @media screen and (min-width:1440px){
+            .containor{
+                display: flex;
+                flex-direction: column;
+                color: azure;
+                background-color: aqua;
+            }
+        }
+       
+       
+    </style>
+</head>
+<body>
+    <div class="containor">
+       <div class="box box1"><h1>This is a Media Query demo page.</h1>
+        <p>frame1</p>
+       </div>
+       <div class="box box2"><h1>This is a Media Query demo page.</h1>
+        <p>Screen size: 1440px</p>
+       </div>
+       <div class="box box3"><h1>This is a Media Query demo page.</h1>
+        <p>Screen size: 1024px</p>
+       </div>
+       <div class="box box4"><h1>This is a Media Query demo page.</h1>
+        <p>screen size:768px</p>
+    </div>
+        <div class="box box4"><h1>This is a Media Query demo page.</h1>
+            <p>Screen size:425px</p>
+        
+       </div>
+    </div>
+</body>
+</html>
